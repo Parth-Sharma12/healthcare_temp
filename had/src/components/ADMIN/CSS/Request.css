@@ -1,0 +1,4 @@
+.Buttons{
+    display: flex;
+    gap: 16px; /* Adjust the value to increase or decrease the space between buttons */
+}

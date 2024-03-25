@@ -1,0 +1,154 @@
+/*styles.css */
+
+/* Styles for the Jumbotron section */
+.jumbotron-section {
+  background-color: hsl(0, 27%, 86%);
+}
+
+
+
+/* Styles for the heading */
+.jumbotron-section h1 {
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+}
+
+.form-check {
+  margin-top: 50px;
+}
+
+/* Styles for the highlighted text within the heading */
+.jumbotron-section .text-primary {
+  color: hsl(217, 10%, 50.8%);
+}
+
+/* Styles for the paragraph text */
+.jumbotron-section p {
+  color: hsl(217, 10%, 50.8%);
+}
+
+/* Styles for the card containing the form */
+.jumbotron-section .card {
+  margin: 0;
+
+}
+
+/* Styles for the form inputs */
+.jumbotron-section .form-outline {
+  margin-bottom: 1.5rem;
+}
+
+/* Styles for the checkbox */
+.jumbotron-section .form-check {
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Styles for the submit button */
+.jumbotron-section button.btn-primary {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Form field */
+.card-body {
+  margin-top: 3 0px;
+  background-color: #cdf4f9;;
+  padding: 20px;
+  width: 500px;
+  height: 400px;
+}
+
+
+
+.jumbotron-section .btn-floating {
+  margin-right: 0.5rem;
+}
+
+.log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.signup-container {
+  text-align: center;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  background-color:#3498db;
+  /* Adjust the color here */
+  color: white;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #ffffff; /* Dark text color for contrast */
+  border: none;
+  cursor: pointer;
+ 
+  /* Add any other styling you need */
+}
+.signup-button:hover {
+  background-color: #1b1919; /* Lighter color on hover */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.card {
+  width: 500px;
+  margin-left: 500px;
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0px 0px rgba(253, 250, 250, 0.1);
+  background-color: #f2faf8;;
+  height: 650px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 20px 16px rgba(0, 0, 0, 0.2);
+}
+.form-control{
+  margin-bottom: 10px;
+}
+
+.form-control:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-outline {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+#form3Example3 {
+  /* Your specific styles for the password input go here */
+  margin-top: 80px; /* Adjust the margin-top to bring the password input closer to the email input */
+}
+/* Style for the password input */
+#form3Example4 {
+  /* Your specific styles for the password input go here */
+  margin-top: 10px; /* Adjust the margin-top to bring the password input closer to the email input */
+}
+.Login{
+  text-align: center;
+}
+.Licence_field{
+  width: 1400px;
+}
+.register_page{
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.sidebar{
+  margin-top: 300px;
+  width: 500px;
+  height: 1500px;
+  background-color: #bb3bb1;
+}
+/* Add more styles as needed*/
