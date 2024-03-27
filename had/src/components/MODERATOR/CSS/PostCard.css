@@ -1,7 +1,7 @@
 /* PostCard.css */
 .post-card {
-    width: 620px;
-    height: 600px;
+    width: 820px;
+    height: 700px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 16px;
@@ -9,8 +9,7 @@
     padding: 16px;
     margin-bottom: 20px;
     transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    margin-left: 10px;
- 
+    align-items: center;
   
     &:hover {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -68,11 +67,11 @@
     height: 300px;
     margin-bottom: 30px;
     overflow: auto;
-    width: 561px;
+    width: 700px;
     
   }
   .image-container{
-    width:540px;
+    width:700px;
     height: 200px;
     align-items: center;
     display: flex;
@@ -89,4 +88,7 @@
 }
 .Header{
     height: 50px;
+}
+.btn-disable{
+  margin-left: -10px;
 }

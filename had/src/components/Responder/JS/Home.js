@@ -23,10 +23,10 @@ export const Home = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/" className="nav-link"><b>Home</b></Link>
             </li>
             <li className="nav-item">
-              <Link to="/view-posts" className="nav-link">View Posts</Link>
+              <Link to="/" className="nav-link">Profile</Link>
             </li>
           </ul>
         </div>
@@ -44,7 +44,7 @@ export const Home = () => {
               <p>Total Unanswered Questions:</p>
               <div className="circle2">{totalUnansweredQuestions1}</div>
             </div>
-            <Link to="/"><button>Answer Now</button></Link>
+            <Link to="/Unanswered"><button>Answer Now</button></Link>
           </div>
           <div className="data data2">
             <div className="info-row">
@@ -55,7 +55,7 @@ export const Home = () => {
               <p>Total Number of Flagged Posts:</p>
               <div className="circle2">{totalUnansweredQuestions2}</div>
             </div>
-            <Link to="/"><button>Answer Now</button></Link>
+            <Link to="/Unanswered"><button>Answer Now</button></Link>
           </div>
         </div>
       </div>

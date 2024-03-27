@@ -51,6 +51,7 @@
     height: 705px;
     background-color: rgb(207, 60, 209);
     width: 150px;
+    padding: 64px;
   }
   .logo{
     width: 100px;
@@ -158,74 +159,4 @@
 
  /* Add this at the end of your CSS file */
 
-@media screen and (max-width: 1200px) {
-  .navbar {
-    width: 100%; /* Make navbar full width */
-    justify-content: center; /* Center navbar items */
-  }
-  
-  .navbar-nav {
-    margin-left: 1000px; /* Remove margin */
-    justify-content: center; /* Center nav items */
-  }
-  
-  .nav-item {
-    margin-left:  0; /* Adjust margin */
-  }
-  .logo{
-    margin-left: 40px;
-  }
-  .nav-item.dropdown {
-    margin-right: 20px; /* Adjust margin */
-  }
-  /* Adjust logo and text size and position */
-  .navbar-brand {
-    font-size: 20px; /* Adjust text size */
-    margin-left: 10px; /* Add margin */
-  }
 
-  .logo {
-    width: 80px; /* Adjust logo size */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .dropdown-menu {
-    top: 100%; /* Adjust dropdown position */
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .responder-content {
-    flex-direction: column; /* Stack responder content vertically */
-    align-items: center;
-  }
-  
-  .vertical-column {
-    display: none; /* Hide vertical column */
-  }
-  
-  .data-container {
-    margin-top: 20px; /* Adjust margin */
-    margin-left: auto;
-    width: 1200px;
-  
-  }
-  
-  .data {
-    margin-left: 0px; /* Reset margin */
-    width: 70%; /* Make data containers full width */
-  }
-  
-  .info-row {
-    margin-left: 80px; /* Reset margin */
-  }
-  
-  .circle1,
-  .circle2 {
-    margin-left: 40px; /* Reset margin */
-    margin-bottom: 10px; /* Add some space between circles */
-  }
-  .circle2{
-    margin-left: 90px;
-  }
-}

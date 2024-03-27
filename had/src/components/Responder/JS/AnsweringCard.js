@@ -1,0 +1,51 @@
+import React,{useState} from 'react';
+import '../CSS/AnsweringCard.css'; // Add styles for your question-answer card here
+const AnsweringCard = ({question,username}) => {
+  question = 'what are the health concerns due to obesity?'
+  username= 'Parth-Sharma12';
+  const currentTime = new Date().toLocaleTimeString();
+  const [answer, setAnswer] = useState('');
+      
+  const handleChange = (event) => {
+    setAnswer(event.target.value);
+  };
+  const handleSubmit = () => {
+    // Implement your submit logic here
+    console.log('Submitted answer:', answer);
+    // Optionally, you can clear the answer field after submission
+    setAnswer('');
+  };
+  return (
+       
+    <div className="question-answer-card">
+        <div className="username">
+        <h7>Asked By: <b>{username}</b></h7>
+      </div>
+      <div className="header">
+        <h3>Question:</h3>
+      </div>
+      <div className="ques-content">
+        <p>{question}</p>
+      </div>
+      <div className="form-group">
+          <label htmlFor="answerInput"><h3>Your Answer:</h3></label>
+          <textarea
+          type="text"
+            className="form-control"
+            id="answerInput"
+            value={answer}
+            onChange={handleChange}
+          ></textarea>
+
+        </div>
+      <div>
+        <div className="answer-timing">
+          <p>Answered at: {currentTime}</p>
+        </div>
+        <button className="btn-submit" onClick={handleSubmit}>Submit</button>
+      </div>
+      </div>
+  );
+};
+
+export default AnsweringCard;

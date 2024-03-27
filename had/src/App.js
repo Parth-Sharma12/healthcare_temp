@@ -11,17 +11,20 @@ import PostCard from './components/MODERATOR/JS/PostCard.js';
 import { QnA } from './components/MODERATOR/JS/QnA.js';
 import QuestionAnswerCard from './components/MODERATOR/JS/QuestionAnswerCard.js';
 import { Home } from './components/Responder/JS/Home.js';
+import { Unanswered } from './components/Responder/JS/Unanswered.js';
+import AnsweringCard from './components/Responder/JS/AnsweringCard.js';
 function App() {
   return (
     <Router>
     <Routes>
-      {/* Moderator */}
+      {/* Moderator
       <Route path="/" exact element={<FlaggedPosts/>} />
-      <Route path="/QnA" exact element={<QnA/>}/>
-
-      {/* Responder
-      <Route path="/" exact element={<Home/>} />
       <Route path="/QnA" exact element={<QnA/>}/> */}
+
+      Responder
+      <Route path="/" exact element={<Home/>} />
+      <Route path="/Unanswered" exact element={<Unanswered/>} />
+    
 
       {/* ADMIN */}
       {/* <Route path="/" exact element={<AdminPanel/>} />

@@ -65,7 +65,7 @@ export const PostCard = ({ title, description,imageSrc,userName= "Parth Sharma",
         </div>
          
           <div className="button-container">
-            <button onClick={onDisable}>Disable</button>
+            <button className='btn-disable' onClick={onDisable}>Disable</button>
             <button onClick={onUnflag}>Unflag</button>
           </div>
         </div>
