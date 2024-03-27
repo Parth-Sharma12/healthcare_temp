@@ -17,9 +17,9 @@ function App() {
   return (
     <Router>
     <Routes>
-      {/* Moderator
-      <Route path="/" exact element={<FlaggedPosts/>} />
-      <Route path="/QnA" exact element={<QnA/>}/> */}
+        {/* Moderator
+        <Route path="/" exact element={<FlaggedPosts/>} />
+        <Route path="/QnA" exact element={<QnA/>}/> */}
 
       Responder
       <Route path="/" exact element={<Home/>} />

@@ -1,8 +1,9 @@
 import React from 'react';
 import '../CSS/QuestionAnswerCard.css'; // Add styles for your question-answer card here
-const QuestionAnswerCard = ({ question, answer, onUpvote, onDownvote }) => {
+const QuestionAnswerCard = ({ question, answer, onUpvote, onDownvote ,flag}) => {
   // question = 'what are the health concerns due to obesity?'
   // answer = 'Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include';
+  flag = 1;
   const currentTime = new Date().toLocaleTimeString();
   return (
    
@@ -27,6 +28,11 @@ const QuestionAnswerCard = ({ question, answer, onUpvote, onDownvote }) => {
         <div className="vote-buttons">
           <button onClick={onUpvote}>Upvote</button>
           <button onClick={onDownvote}>Downvote</button>
+          {flag === 1 ? (
+            <button className="unflag-button" onClick={() => console.log('Unflag clicked')}>Unflag</button>
+          ) : (
+            <button className="flag-button" onClick={() => console.log('Flag clicked')}>Flag</button>
+          )}
         </div>
       </div>
     </div>

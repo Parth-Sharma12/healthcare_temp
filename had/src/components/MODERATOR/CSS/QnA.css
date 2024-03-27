@@ -37,28 +37,63 @@
     top: 100%;
     left: 0;
   }
-  .vertical-column1{
-    height: auto;
-    background-color: rgb(207, 60, 209);
-    width: 150px;
+  .main-content_mod1 {
+    display: flex;
   }
+  
+  .flag-img1{
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    margin-top: 500px;
+  }
+  
   .logo{
     width: 100px;
     height: 80px;
   }
   .QnAs{
-    margin-left: 300px;
+    margin-left: 400px;
     margin-top:20px;
     margin-right: 280px;
   }
   .column-item{
     margin-bottom:100px;
   }
-  .main-content{
-    background-image:
-    url("C:\Users\ASUS\Desktop\temp\had\public\images\Question.png");
+  .box1 {
+    width: 200px;
+    padding: 20px;
+    background-color: #f8d7d7; /* Light pink background */
+    border: 1px solid #e0a6a6; /* Light pink border */
+    border-radius: 16px;
+    text-align: center;
+    margin-left: 220px;
+    height: 300px;
+    margin-top: 40px;
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    right: 0;
+    margin-right: 50px;
   }
 
+  
+  .circle1 {
+    width: 120px; /* Increased size for the circle */
+    height: 120px; /* Increased size for the circle */
+    border-radius: 50%;
+    background-color: #007bff; /* Blue circle background */
+    color: white;
+    font-size: 36px; /* Larger font size for the circle */
+    line-height: 120px; /* Center text vertically */
+    margin: 0 auto 15px; /* Adjusted margin for better spacing */
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+  
+  .circle1-text {
+    font-size: 18px;
+    color: #555; /* Slightly darker text color */
+  }
   @media (max-width: 992px) {
     .nav-item {
         margin-right: 10px;

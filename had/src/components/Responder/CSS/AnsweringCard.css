@@ -1,4 +1,4 @@
-.question-answer-card {
+.question-answer-card_responder {
     width: 900px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.6); /* Light background color */
@@ -16,25 +16,24 @@
     margin-bottom: 10px;
   }
   
-  .header {
+  .header_responder {
     margin-bottom: 10px;
-    margin-left: -15px;
     height: 30px;
     display: flex;
     align-items: center; /* Vertically align items */
   }
   
-  .question-answer-card h3 {
+  .question-answer-card_responder h3 {
     font-size: 1.2rem;
     margin-bottom: 4px;
   }
   
-  .question-answer-card p {
+  .question-answer-card_responder p {
     font-size: 1rem;
     margin-bottom: 12px;
   }
   
-  .ques-content {
+  .ques-content_responder {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 12px;
@@ -43,7 +42,7 @@
     overflow: auto;
   }
   
-  .ans-content {
+  .ans-content_responder {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 12px;

@@ -59,6 +59,7 @@ export const FlaggedPosts = () => {
             </nav>
             <div className='main-content1'>
                 <div className="vertical-column1">
+                    <img className = "flag-img" src="images/flagged_posts.png" alt="Column 1 Image" />
                 </div>
                 <div className='Posts'>
                 {flaggedPosts.map((post, index) => (

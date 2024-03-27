@@ -17,14 +17,14 @@ const AnsweringCard = ({question,username}) => {
   };
   return (
        
-    <div className="question-answer-card">
+    <div className="question-answer-card_responder">
         <div className="username">
         <h7>Asked By: <b>{username}</b></h7>
       </div>
-      <div className="header">
+      <div className="header_responder">
         <h3>Question:</h3>
       </div>
-      <div className="ques-content">
+      <div className="ques-content_responder">
         <p>{question}</p>
       </div>
       <div className="form-group">
