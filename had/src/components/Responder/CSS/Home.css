@@ -72,6 +72,7 @@
   }
   .responder-content{
     display: flex;
+    height: 705px;
   }
   .data-container {
     display: flex;
@@ -122,6 +123,7 @@
   
   .circle2 {
     margin-left: 70px;
+    margin-top: 10px;
   }
   
   .circle1:hover,

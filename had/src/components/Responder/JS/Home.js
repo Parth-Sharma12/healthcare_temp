@@ -33,7 +33,7 @@ export const Home = () => {
       </nav>
 
       <div className="responder-content">
-        <div className="vertical-column"></div>
+        <div className="vertical-column1"></div>
         <div className="data-container">
           <div className="data data1">
             <div className="info-row">
