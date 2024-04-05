@@ -47,12 +47,7 @@
     top: 100%;
     left: 0;
   }
-  .vertical-column1{
-    height: auto;
-    background-color: rgb(207, 60, 209);
-    width: 400px;
-    padding: 64px;
-  }
+  
   .logo{
     width: 100px;
     height: 80px;
@@ -60,6 +55,7 @@
   .main-content1{
     display: flex;
     width: 1600px;
+    margin-left: 100px;
     justify-content: space-between;
   
     /* Replace 'background-image.jpg' with your image file name */
@@ -114,14 +110,16 @@
     color: #555; /* Slightly darker text color */
   }
   .flag-img{
-    width: 200px;
-    height: 250px;
+    width: 400px;
+    height: 350px;
     position: fixed;
     bottom: 0;
     margin-left: -60px;
 
   }
-  
+  .img{
+    margin-right: 40px;
+  }
   @media (max-width: 1200px) {
     /* Media query for smaller devices */
    

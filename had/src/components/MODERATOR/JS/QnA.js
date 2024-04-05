@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 export const QnA = () => {
-  const numberOfFlaggedQuestion = 10;
+  const numberOfFlaggedQuestion = 2;
   const qaData = [
     {
       question: 'What are the health concerns due to obesity?',
@@ -39,7 +39,7 @@ export const QnA = () => {
           </li>
          
           <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
+            <a class="nav-link" href="#"> <Link to="/Profile" style={linkStyle}>Profile</Link></a>
           </li>
           <li class="nav-item">
             <a class="nav-link  " href="#"><b>QnA's</b></a>
@@ -50,7 +50,7 @@ export const QnA = () => {
       </div>
     </nav>
     <div className='main-content_mod1'>
-    <img className = "flag-img1" src="images/flagged_posts.png" alt="Column 1 Image" />
+    <img className = "flag-img1" src="images/flag.png" alt="Column 1 Image" />
       <div className='QnAs'>
         {qaData.map((qa, index) => (
           <div className="column-item" key={index}>
@@ -65,7 +65,7 @@ export const QnA = () => {
 
       </div>
       <div className='box1'>
-          <h3>Number of Flagged Posts</h3>
+          <h3>Number of Flagged Questions</h3>
           <div className='circle1'>{numberOfFlaggedQuestion}</div>
         </div>
     </div>

@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+
 import '../CSS/AnsweringCard.css'; // Add styles for your question-answer card here
 const AnsweringCard = ({question,username}) => {
   question = 'what are the health concerns due to obesity?'
@@ -13,7 +14,7 @@ const AnsweringCard = ({question,username}) => {
     // Implement your submit logic here
     console.log('Submitted answer:', answer);
     // Optionally, you can clear the answer field after submission
-    setAnswer('');
+    window.alert('Answer submitted successfully!');
   };
   return (
        
@@ -44,6 +45,7 @@ const AnsweringCard = ({question,username}) => {
         </div>
         <button className="btn-submit" onClick={handleSubmit}>Submit</button>
       </div>
+      
       </div>
   );
 };

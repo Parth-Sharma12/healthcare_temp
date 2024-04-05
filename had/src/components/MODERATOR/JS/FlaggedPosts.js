@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import PostCard from './PostCard';
 export const FlaggedPosts = () => {
-    const numberOfFlaggedPosts = 10;
+    const numberOfFlaggedPosts = 2;
     const flaggedPosts = [
         {
             title: 'Post 1',
@@ -44,23 +44,21 @@ export const FlaggedPosts = () => {
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Posts</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#"> <Link to="/QnA" style={linkStyle}>QnA's</Link></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Profile</a>
-                        </li>
+                            <a class="nav-link" href="#"> <Link to="/Profile" style={linkStyle}>Profile</Link></a>
+                        </li>   
 
                     </ul>
 
                 </div>
             </nav>
             <div className='main-content1'>
-                <div className="vertical-column1">
-                    <img className = "flag-img" src="images/flagged_posts.png" alt="Column 1 Image" />
+                <div className='img'>
+                <img className = "flag-img" src="images/flag.png" alt="Column 1 Image" />
                 </div>
+                
                 <div className='Posts'>
                 {flaggedPosts.map((post, index) => (
                     <div className="column" key={index}>

@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom';
 import '../CSS/Home.css';
 
 export const Home = () => {
-  const totalQuestions1 = 20;
-  const totalUnansweredQuestions1 = 5;
-  const totalQuestions2 = 20;
-  const totalUnansweredQuestions2 = 5;
+  const totalQuestions1 = 10;
+  const totalUnansweredQuestions1 = 2;
+
 
   return (
     <div className="app-container">
@@ -26,7 +25,7 @@ export const Home = () => {
               <Link to="/" className="nav-link"><b>Home</b></Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-link">Profile</Link>
+              <Link to="/Profile" className="nav-link">Profile</Link>
             </li>
           </ul>
         </div>
@@ -46,17 +45,7 @@ export const Home = () => {
             </div>
             <Link to="/Unanswered"><button>Answer Now</button></Link>
           </div>
-          <div className="data data2">
-            <div className="info-row">
-              <p>Received Posts:</p>
-              <div className="circle1">{totalQuestions2}</div>
-            </div>
-            <div className="info-row">
-              <p>Total Number of Flagged Posts:</p>
-              <div className="circle2">{totalUnansweredQuestions2}</div>
-            </div>
-            <Link to="/Unanswered"><button>Answer Now</button></Link>
-          </div>
+         
         </div>
       </div>
     </div>

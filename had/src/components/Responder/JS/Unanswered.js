@@ -33,7 +33,7 @@ export const Unanswered = () => {
       </div>
     </nav>
     <div className='Main-content1'>
-    <div className="vertical-column1">
+   <div className='img_responder'>
     <img className="moving-img" src="images/unanswered3.png" alt="Moving Img" />
     </div>
     <div className='unanswered-ques'>
