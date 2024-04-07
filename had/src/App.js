@@ -7,15 +7,15 @@ import {DoctorHome} from './components/DoctorHome.js'
 import {AdminPanel} from './components/ADMIN/JS/AdminPanel.js'
 import {Profile} from './components/ADMIN/JS/Profile.js'
 
-import PostCard from './Moderator/components/PostCard/PostCard.js';
+import PostCard from './Moderator/components/PostCard/MPostCard.js';
 
-import QuestionAnswerCard from './Moderator/components/QuestionAnswerCard/QuestionAnswerCard.js';
-import { Home } from './Responder/components/Home/Home.js';
-import { Unanswered } from './Responder/components/Unanswered/Unanswered.js';
-import AnsweringCard from './Responder/components/AnsweringCard/AnsweringCard.js';
+import QuestionAnswerCard from './Moderator/components/QuestionAnswerCard/MQuestionAnswerCard.js';
+import { RHome } from './Responder/components/Home/RHome.js';
+import { RUnanswered } from './Responder/components/Unanswered/RUnanswered.js';
+import AnsweringCard from './Responder/components/AnsweringCard/RAnsweringCard.js';
 import {Comments} from './components/MODERATOR/JS/Comments.js';
-import QnA from './Moderator/components/QnA/QnA.js';
-import { FlaggedPosts } from './Moderator/components/MflaggedPost/FlaggedPosts.js';
+import QnA from './Moderator/components/QnA/MQnA.js';
+import { MFlaggedPosts } from './Moderator/components/MflaggedPost/MFlaggedPosts.js';
 
 
 function App() {
@@ -24,14 +24,14 @@ function App() {
     <Routes>
         {/* Moderator
         
-        <Route path="/" exact element={<FlaggedPosts/>} /> 
+        <Route path="/" exact element={<MFlaggedPosts/>} /> 
         <Route path="/Profile" exact element={<Profile/>} />
         <Route path="/QnA" exact element={<QnA/>}/> */}
 
       Responder
-      <Route path="/" exact element={<Home/>} />
+      <Route path="/" exact element={<RHome/>} />
       <Route path="/Profile" exact element={<Profile/>} />
-      <Route path="/Unanswered" exact element={<Unanswered/>} />
+      <Route path="/Unanswered" exact element={<RUnanswered/>} />
     
 
       {/* ADMIN */}

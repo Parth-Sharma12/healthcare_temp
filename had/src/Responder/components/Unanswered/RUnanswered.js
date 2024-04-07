@@ -1,8 +1,8 @@
 import React from 'react'
-import './Unanswered.css';
-import AnsweringCard from '../AnsweringCard/AnsweringCard';
+import './RUnanswered.css';
+import AnsweringCard from '../AnsweringCard/RAnsweringCard';
 import { Link } from 'react-router-dom';
-export const Unanswered = () => {
+export const RUnanswered = () => {
   const linkStyle = {
     color: 'black',
     textDecoration: 'none',

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css';
+import './RHome.css';
 
-export const Home = () => {
+export const RHome = () => {
   const totalQuestions1 = 10;
   const totalUnansweredQuestions1 = 2;
 

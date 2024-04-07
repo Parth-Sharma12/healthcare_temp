@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 
-import './AnsweringCard.css'; // Add styles for your question-answer card here
-const AnsweringCard = ({question,username}) => {
+import './RAnsweringCard.css'; // Add styles for your question-answer card here
+const RAnsweringCard = ({question,username}) => {
  
   const currentTime = new Date().toLocaleTimeString();
   const [answer, setAnswer] = useState('');
@@ -49,4 +49,4 @@ const AnsweringCard = ({question,username}) => {
   );
 };
 
-export default AnsweringCard;
+export default RAnsweringCard;

@@ -1,8 +1,8 @@
 // PostCard.js
 import React, { useState } from 'react';
-import './PostCard.css'; // Add styles for your post card here
+import './MPostCard.css'; // Add styles for your post card here
 
-export const PostCard = ({ title, description,imageSrc,userName, onDisable,postTime,onUnflag }) => {
+export const MPostCard = ({ title, description,imageSrc,userName, onDisable,postTime,onUnflag }) => {
 
   const [showFullDescription, setShowFullDescription] = useState(false);
 
@@ -73,4 +73,4 @@ export const PostCard = ({ title, description,imageSrc,userName, onDisable,postT
   );
 };
 
-export default PostCard;
+export default MPostCard;

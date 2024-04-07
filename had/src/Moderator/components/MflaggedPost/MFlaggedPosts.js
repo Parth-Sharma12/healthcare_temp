@@ -1,10 +1,10 @@
 import React from 'react'
-import './FlaggedPosts.css'
+import './MFlaggedPosts.css'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import PostCard from '../PostCard/PostCard';
-export const FlaggedPosts = () => {
+import PostCard from '../PostCard/MPostCard';
+export const MFlaggedPosts = () => {
     const numberOfFlaggedPosts = 2;
     const flaggedPosts = [
         {

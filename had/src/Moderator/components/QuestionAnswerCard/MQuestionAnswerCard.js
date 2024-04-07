@@ -1,6 +1,6 @@
 import React from 'react';
-import './QuestionAnswerCard.css'; // Add styles for your question-answer card here
-const QuestionAnswerCard = ({ question, answer, onUpvote, onDownvote ,flag,time}) => {
+import './MQuestionAnswerCard.css'; // Add styles for your question-answer card here
+const MQuestionAnswerCard = ({ question, answer, onUpvote, onDownvote ,flag,time}) => {
   // question = 'what are the health concerns due to obesity?'
   // answer = 'Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include';
   flag = 1;
@@ -38,4 +38,4 @@ const QuestionAnswerCard = ({ question, answer, onUpvote, onDownvote ,flag,time}
   );
 };
 
-export default QuestionAnswerCard;
+export default MQuestionAnswerCard;

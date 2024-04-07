@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import './QnA.css'
-import QuestionAnswerCard from '../QuestionAnswerCard/QuestionAnswerCard';
+import './MQnA.css'
+import QuestionAnswerCard from '../QuestionAnswerCard/MQuestionAnswerCard';
 import { Link } from 'react-router-dom';
 
 
-export const QnA = () => {
+export const MQnA = () => {
   const numberOfFlaggedQuestion = 2;
   const qaData = [
     {
@@ -80,5 +80,5 @@ export const QnA = () => {
 
   )
 };
-export default QnA;
+export default MQnA;
 
