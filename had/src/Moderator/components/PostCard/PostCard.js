@@ -1,9 +1,8 @@
 // PostCard.js
 import React, { useState } from 'react';
-import '../CSS/PostCard.css'; // Add styles for your post card here
-const description = "Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant or store with frozen, preheated or precooked ingredients and served in packaging for take-out/takeaway.Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant or store with frozen, preheated or precooked ingredients and served in packaging for take-out/takeaway.Fast food is a type of mass-produced food designed for commercial resale, with a strong priority placed on speed of service. It is a commercial term, limited to food sold in a restaurant or store with frozen, preheated or precooked ingredients and served in packaging for take-out/takeaway."
-const imageSrc = '/images/adminpanel.png'
-export const PostCard = ({ title, description,imageSrc,userName= "Parth Sharma", onDisable,postTime = " 1h ago", onUnflag }) => {
+import './PostCard.css'; // Add styles for your post card here
+
+export const PostCard = ({ title, description,imageSrc,userName, onDisable,postTime,onUnflag }) => {
 
   const [showFullDescription, setShowFullDescription] = useState(false);
 
@@ -33,7 +32,7 @@ export const PostCard = ({ title, description,imageSrc,userName= "Parth Sharma",
       <div className="content-box">
       
         <div className='Title'>
-          <h3>"Fast Food"</h3>
+          <h3>{title}</h3>
         </div>
         <div className='Description-box'>
           <div className='Description'>

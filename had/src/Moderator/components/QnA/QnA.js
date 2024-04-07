@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../CSS/QnA.css'
-import QuestionAnswerCard from './QuestionAnswerCard';
+import './QnA.css'
+import QuestionAnswerCard from '../QuestionAnswerCard/QuestionAnswerCard';
 import { Link } from 'react-router-dom';
 
 
@@ -10,10 +10,14 @@ export const QnA = () => {
     {
       question: 'What are the health concerns due to obesity?',
       answer: 'Obesity is associated with a wide range of health concerns, both physical and psychological...',
+      time : '7:04:41 PM'
+      
     },
     {
       question: 'How can I improve my mental health?',
       answer: 'Improving mental health involves various strategies such as regular exercise, maintaining...',
+      time : '8:01:20 PM',
+     
     },
     // Add more Q&A objects as needed
   ];
@@ -57,6 +61,7 @@ export const QnA = () => {
             <QuestionAnswerCard
               question={qa.question}
               answer={qa.answer}
+              time = {qa.time}
               onUpvote={() => {}}
               onDownvote={() => {}}
             />

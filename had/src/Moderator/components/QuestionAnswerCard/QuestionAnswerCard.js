@@ -1,10 +1,10 @@
 import React from 'react';
-import '../CSS/QuestionAnswerCard.css'; // Add styles for your question-answer card here
-const QuestionAnswerCard = ({ question, answer, onUpvote, onDownvote ,flag}) => {
+import './QuestionAnswerCard.css'; // Add styles for your question-answer card here
+const QuestionAnswerCard = ({ question, answer, onUpvote, onDownvote ,flag,time}) => {
   // question = 'what are the health concerns due to obesity?'
   // answer = 'Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include health risks and complications of obesity include const answer Obesity is associated with a wide range of health concerns, both physical and psychological. Some of the most significant health risks and complications of obesity include';
   flag = 1;
-  const currentTime = new Date().toLocaleTimeString();
+  // const currentTime = new Date().toLocaleTimeString();
   return (
    
     <div className="question-answer-card">
@@ -23,11 +23,10 @@ const QuestionAnswerCard = ({ question, answer, onUpvote, onDownvote ,flag}) => 
       </div>
       <div>
         <div className="answer-timing">
-          <p>Answered at: {currentTime}</p>
+          <p>Answered at: {time}</p>
         </div>
         <div className="vote-buttons">
-          <button onClick={onUpvote}>Upvote</button>
-          <button onClick={onDownvote}>Downvote</button>
+        
           {flag === 1 ? (
             <button className="unflag-button" onClick={() => console.log('Unflag clicked')}>Unflag</button>
           ) : (

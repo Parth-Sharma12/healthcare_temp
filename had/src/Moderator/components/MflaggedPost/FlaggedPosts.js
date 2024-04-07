@@ -1,28 +1,35 @@
 import React from 'react'
-import '../CSS/FlaggedPosts.css'
+import './FlaggedPosts.css'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import PostCard from './PostCard';
+import PostCard from '../PostCard/PostCard';
 export const FlaggedPosts = () => {
     const numberOfFlaggedPosts = 2;
     const flaggedPosts = [
         {
-            title: 'Post 1',
+            title: 'Fast Food',
             description: 'Fast food refers to easily prepared and quickly served meals that are often consumed on the go. It has become an integral part of modern society, offering convenience and accessibility to people with busy lifestyles. The popularity of fast food is attributed to factors such as speed, affordability, and widespread availability. While it has its advantages, there are also concerns about its impact on health, the environment, and overall well-being.',
             imageSrc: '/images/adminprofile.png',
-            userName: 'User1',
-            postTime: '2h ago',
+            userName: 'Rahul Sharma',
+            postTime: '4/5/24 6:44 ',
         },
         {
-            title: 'Post 2',
-            description: 'Description for Post 2...',
+            title: 'Heart Disease',
+            description: 'Heart disease, also known as cardiovascular disease, refers to a range of conditions that affect the heart. These conditions can involve the blood vessels, such as coronary artery disease, or the heart muscle itself, such as cardiomyopathy. Heart disease can lead to serious complications, including heart attack, heart failure, or stroke.',
             imageSrc: '/images/adminpanel.png',
-            userName: 'User2',
-            postTime: '1h ago',
+            userName: 'Avinash jain',
+            postTime: '4/5/24 12:31 ',
         },
         // Add more posts as needed
     ];
+    const handleUnflag = (index) => {
+        // Perform unflag action
+        console.log(`Unflag post ${index}`);
+        // Show alert
+        alert('Post unflagged successfully');
+    };
+ 
     const linkStyle = {
     color: 'black',
     textDecoration: 'none',
@@ -70,7 +77,7 @@ export const FlaggedPosts = () => {
                             userName={post.userName}
                             postTime={post.postTime}
                             onDisable={() => console.log(`Disable post ${index}`)} // Add your disable post function
-                            onUnflag={() => console.log(`Unflag post ${index}`)} // Add your unflag post function
+                            onUnflag={()  => handleUnflag(index)} // Add your unflag post function
                         />
                         </div>
                     ))} 

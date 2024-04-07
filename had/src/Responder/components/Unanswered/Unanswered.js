@@ -1,6 +1,6 @@
 import React from 'react'
-import '../CSS/Unanswered.css';
-import AnsweringCard from './AnsweringCard';
+import './Unanswered.css';
+import AnsweringCard from '../AnsweringCard/AnsweringCard';
 import { Link } from 'react-router-dom';
 export const Unanswered = () => {
   const linkStyle = {
@@ -37,8 +37,8 @@ export const Unanswered = () => {
     <img className="moving-img" src="images/unanswered3.png" alt="Moving Img" />
     </div>
     <div className='unanswered-ques'>
-      <AnsweringCard question = "What are the ways to avoid obesity?" username = "parth-sharma12"></AnsweringCard>
-      <AnsweringCard question = "What are the ways to avoid Heart Problems?" username = "parth-sharma12"></AnsweringCard>
+      <AnsweringCard question = "What are the ways to avoid obesity?" username = "Vivek-Maltare"></AnsweringCard>
+      <AnsweringCard question = "What are the ways to avoid Heart Problems?" username = "parth-sharma"></AnsweringCard>
     </div>
     </div>
 

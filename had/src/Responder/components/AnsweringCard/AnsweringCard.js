@@ -1,9 +1,8 @@
 import React,{useState} from 'react';
 
-import '../CSS/AnsweringCard.css'; // Add styles for your question-answer card here
+import './AnsweringCard.css'; // Add styles for your question-answer card here
 const AnsweringCard = ({question,username}) => {
-  question = 'what are the health concerns due to obesity?'
-  username= 'Parth-Sharma12';
+ 
   const currentTime = new Date().toLocaleTimeString();
   const [answer, setAnswer] = useState('');
       
